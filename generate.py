@@ -5,6 +5,7 @@ import argparse
 from datetime import datetime
 import json
 import os
+import time
 
 import librosa
 import numpy as np
@@ -276,4 +277,16 @@ def main():
 
 
 if __name__ == '__main__':
+
+    start = time.time()
     main()
+    end = time.time()
+
+    duration = end-start
+    print('                        ')
+    print("##########################")
+    print("Generation time = {0:.12f} sec".format(float(duration)))
+    print("Generation time = {0:.12f} sec".format(float(duration)/60))
+    print("Generation time = {0:.12f} sec".format(float(duration)/3600))
+    print("###########################")
+    print('                        ')

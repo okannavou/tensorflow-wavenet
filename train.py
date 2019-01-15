@@ -334,4 +334,16 @@ def main():
 
 
 if __name__ == '__main__':
+
+    start = time.time()
     main()
+    end = time.time()
+
+    duration = end-start
+    print('                        ')
+    print("##########################")
+    print("Training time = {0:.12f} sec".format(float(duration)))
+    print("Training time = {0:.12f} sec".format(float(duration)/60))
+    print("Training time = {0:.12f} sec".format(float(duration)/3600))
+    print("###########################")
+    print('                        ')
