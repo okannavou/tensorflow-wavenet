@@ -282,7 +282,7 @@ if __name__ == '__main__':
     main()
     end = time.time()
 
-    duration = end-start
+    duration = float(end-start)
     print('                        ')
     print("##########################")
     print("Generation time = {0:.12f} sec".format(float(duration)))
